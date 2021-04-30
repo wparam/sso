@@ -1,3 +1,16 @@
+The id_token is a JSON Web Token (JWT) that contains user profile attributes represented in the form of claims. The ID Token is consumed by the application and used to get user information like the user's name, email, and so forth, typically used for UI display.
+
+The Access Token is a credential that can be used by an application to access an API.
+
+Another way to think of it is that the id_token is used to identify the authenticated user, and the access token is used to prove access rights to protected resources.
+
+Also, to validate an id_token or an access_token, your app should validate both the token's signature and the claims. To validate access tokens, your app should also validate the issuer, the audience, and the signing tokens.
+
+Some helpful references:
+https://auth0.com/docs/tokens
+https://medium.com/@nilasini/id-token-vs-access-token-17e7dd622084
+
+
 ---
 page_type: sample
 languages:
